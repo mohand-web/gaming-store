@@ -1,0 +1,17 @@
+{
+  "builds": [
+    {
+      "src": "gaming-store/**",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "gaming-store/dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/gaming-store/dist/index.html"
+    }
+  ]
+}
