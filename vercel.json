@@ -1,10 +1,11 @@
 {
+  "version": 2,
   "builds": [
     {
       "src": "gaming-store/**",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "gaming-store/dist"
+        "distDir": "dist"
       }
     }
   ],
