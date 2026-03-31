@@ -1,0 +1,267 @@
+body :not(input):not(textarea) { text-transform: capitalize; }
+
+body {
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.light-theme {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+main {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(13, 110, 253, 0.3) !important;
+}
+
+
+.btn-primary {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.2);
+  letter-spacing: 1px;
+}
+
+.cart-badge { 
+    background-color: #ff4d4d; 
+    color: white;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 0; 
+    border-radius: 50%;
+    position: absolute;
+    
+    top: -8px; 
+    right: -8px;
+    
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    box-shadow: 0 0 10px rgba(255, 77, 77, 0.7); 
+    border: 2px solid #fff; 
+    
+    z-index: 10; 
+}
+
+.cart-badge {
+    animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popIn {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+
+.custom-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden; 
+    transition: all 0.3s ease; 
+    background: #fff;
+}
+
+.custom-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
+}
+
+.card-img-container {
+    width: 100%;
+    height: 250px; 
+    overflow: hidden;
+    position: relative;
+}
+
+.custom-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.custom-card:hover .custom-img {
+    transform: scale(1.05);
+}
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #0d6efd;
+}
+
+.hover-btn {
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.hover-btn:hover {
+    background-color: #0a58ca;
+    transform: scale(1.02);
+}
+
+.admin-panel {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+.admin-panel .admin-panel-title {
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(255,255,255,0.08);
+}
+
+.admin-panel .admin-card {
+  background: #1a1a1a;
+  color: #e0e0e0;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.55);
+}
+
+.admin-panel h4 {
+  color: #e0e0e0;
+}
+
+.admin-panel .admin-input,
+.admin-panel .admin-select,
+.admin-panel .admin-textarea {
+  background: #171717;
+  color: #e0e0e0;
+  border: 1px solid rgba(255,255,255,0.14);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.35);
+}
+
+.admin-panel .admin-input:focus,
+.admin-panel .admin-select:focus,
+.admin-panel .admin-textarea:focus {
+  outline: none;
+  border-color: rgba(13,110,253,0.9);
+  box-shadow: 0 0 0 0.18rem rgba(13,110,253,0.18);
+  background: #1c1c1c;
+}
+
+.admin-panel .admin-drop-zone {
+  background: #171717;
+  border: 2px dashed rgba(255,255,255,0.24);
+  color: #e0e0e0;
+  transition: all 0.25s ease;
+}
+
+.admin-panel .admin-drop-zone.dragging {
+  border-color: rgba(13,110,253,0.85);
+  background: rgba(13,110,253,0.12);
+}
+
+.admin-panel .admin-drop-zone p,
+.admin-panel .admin-drop-zone i {
+  color: #d1d1d1;
+}
+
+.admin-panel .btn-deploy {
+  background: linear-gradient(135deg, #1662f6, #2c86ff);
+  border: none;
+  color: #ffffff;
+  box-shadow: 0 0 18px rgba(13,110,253,0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.admin-panel .btn-deploy:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 24px rgba(13,110,253,0.45);
+  filter: brightness(1.05);
+}
+
+.admin-panel .admin-action-btns {
+  border-color: rgba(255,255,255,0.16);
+  color: #e0e0e0;
+}
+
+.admin-panel .admin-action-btns:hover {
+  background: rgba(255,255,255,0.06);
+}
+
+.admin-panel .admin-table-container {
+  background: #151515;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.admin-panel .admin-table {
+  color: #e0e0e0;
+  border: none;
+}
+
+.admin-panel .admin-table thead {
+  background: #141414;
+  color: #e0e0e0;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.admin-panel .admin-table th,
+.admin-panel .admin-table td {
+  border: none;
+  vertical-align: middle;
+}
+
+.admin-panel .admin-table tbody tr {
+  background: #181818;
+  transition: background 0.2s ease;
+}
+
+.admin-panel .admin-table tbody tr:hover {
+  background: rgba(255,255,255,0.06);
+}
+
+.admin-panel .admin-badge {
+  background: rgba(255,255,255,0.08);
+  color: #e0e0e0;
+}
+
+.admin-panel .admin-input-group .form-control {
+  background: #171717;
+  color: #e0e0e0;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.admin-panel .admin-input-group .btn-primary {
+  background: #1662f6;
+  border: 1px solid #1662f6;
+}
+
+.admin-panel .admin-input-group .btn-primary:hover {
+  background: #1c75ff;
+}

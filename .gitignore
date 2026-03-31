@@ -1,0 +1,14 @@
+# Backend
+node_modules/
+uploads/
+.env
+
+# Frontend
+gaming-store/node_modules/
+gaming-store/dist/
+gaming-store/.env
+
+# System
+.DS_Store
+Thumbs.db
+SDLC & Presentaion & video/
